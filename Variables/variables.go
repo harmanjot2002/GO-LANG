@@ -6,7 +6,7 @@ import ("fmt")
 var val2 int = 100
 //Package Level Variables
 var myValue int = 500
-
+ 
 func main() { 
   //Variables:
   //Declaration of variable-If we have declared some variable,then its necessary to use it too.
