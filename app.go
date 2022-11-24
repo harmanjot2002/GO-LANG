@@ -2,6 +2,11 @@ package main
 
 import ("fmt")
 
+//Global Level Variables
+var Val2 int = 100
+//Package Level Variables
+var myValue int = 500
+
 func main() { 
   //Printing Hello World
   fmt.Println("Hello World!")
@@ -46,7 +51,9 @@ func main() {
  //1.Local Level-inside a function.
  //2.Global Level-outside function,but condition is to always write it in Pascal Case. 
  //3.Package Level-outside a function,but condition is to always write it in Camel Case.
-  
+ //Package Level=Global+Will be accessed in all other packages also
+  fmt.Println(Val2)
+  fmt.Println(myValue)
   
  //Constants
  //The value of a constant must be assigned when you declare it.
