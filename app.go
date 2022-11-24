@@ -33,5 +33,15 @@ func main() {
   fmt.Println(a1)
   fmt.Println(b1)
   fmt.Println(c1)
+  //Variable declaration in a Block
+  var (
+    a2 int
+    b2 int = 1
+    c2 string = "hello"
+  )
+
+ fmt.Println(a2)
+ fmt.Println(b2)
+ fmt.Println(c2)
   
 }
