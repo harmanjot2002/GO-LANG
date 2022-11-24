@@ -42,6 +42,21 @@ func main() {
  fmt.Println(a2)
  fmt.Println(b2)
  fmt.Println(c2)
+ //We can declare variables in three scopes:
+ //1.Local Level-inside a function.
+ //2.Global Level-outside function,but condition is to always write it in Pascal Case. 
+ //3.Package Level-outside a function,but condition is to always write it in Camel Case.
   
- 
+  
+ //Constants
+ //The value of a constant must be assigned when you declare it.
+ const PI = 3.14
+ fmt.Println(PI)
+//  Typed Constants
+// Typed constants are declared with a defined type:
+const A int=1
+fmt.Println(A)
+// Untyped Constants
+// Untyped constants are declared without a type
+
 }
