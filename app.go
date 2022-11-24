@@ -19,6 +19,19 @@ func main() {
   //More verbose method 
   var c=100
   fmt.Println(c)
-
+  //Type Inference
+  var student1 string = "John" //type is string
+  var student2 = "Jane" //type is inferred
+  x := 2 //type is inferred
+  fmt.Println(student1)
+  fmt.Println(student2)
+  fmt.Println(x)
+  //Types of variables types
+  var a1 string //" "
+  var b1 int //0
+  var c1 bool //false
+  fmt.Println(a1)
+  fmt.Println(b1)
+  fmt.Println(c1)
   
 }
