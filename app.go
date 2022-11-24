@@ -3,7 +3,7 @@ package main
 import ("fmt")
 
 //Global Level Variables
-var Val2 int = 100
+var val2 int = 100
 //Package Level Variables
 var myValue int = 500
 
@@ -25,6 +25,7 @@ func main() {
   var c=100
   fmt.Println(c)
   //Type Inference
+  //:= this notation of declaring keywords cannot be used to declare variables in global scope,for that purpose we can only use "var" keyword.
   var student1 string = "John" //type is string
   var student2 = "Jane" //type is inferred
   x := 2 //type is inferred
@@ -52,18 +53,25 @@ func main() {
  //2.Global Level-outside function,but condition is to always write it in Pascal Case. 
  //3.Package Level-outside a function,but condition is to always write it in Camel Case.
  //Package Level=Global+Will be accessed in all other packages also
-  fmt.Println(Val2)
-  fmt.Println(myValue)
-  
+  fmt.Println(val2) //100
+  fmt.Println(myValue) //500
+  //Shadowing
+  //It means on initializing same variable name at global and local level,priority will be given to local variable only.
+  val2=55
+  fmt.Println(val2) //55
+
+
  //Constants
  //The value of a constant must be assigned when you declare it.
  const PI = 3.14
- fmt.Println(PI)
+ fmt.Println(PI) //3.14
 //  Typed Constants
 // Typed constants are declared with a defined type:
 const A int=1
-fmt.Println(A)
+fmt.Println(A) //1
 // Untyped Constants
 // Untyped constants are declared without a type
+
+
 
 }
