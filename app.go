@@ -39,9 +39,9 @@ func main() {
     b2 int = 1
     c2 string = "hello"
   )
-
  fmt.Println(a2)
  fmt.Println(b2)
  fmt.Println(c2)
   
+ 
 }
