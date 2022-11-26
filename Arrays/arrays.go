@@ -59,5 +59,11 @@ func main(){
 	fmt.Println(len(arr14))
 	fmt.Println(len(arr24))
 
+	//Copy elements of one array into another
+	var arr15 =[...]int{1,2,3,4,5,6,7,8,9}
+	arr16 := arr15
+	fmt.Println(arr15)
+	fmt.Println(arr16)
+
 	
 }
