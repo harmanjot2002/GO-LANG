@@ -66,4 +66,11 @@ func main(){
 	arr16[2]=51
 	fmt.Println(arr15)
 	fmt.Println(arr16)
+
+	//multi-dimensional arrays
+	var matrix [3][3]int = [3][3] int {{1,2,3},{4,5,6},{7,8,9}}
+	fmt.Println(matrix)
+	fmt.Println(len(matrix))
+	fmt.Println(matrix[1])
+	
 }
