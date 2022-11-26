@@ -59,4 +59,23 @@ func main(){
 	prices34 := []int{10,20,30}
 	fmt.Println(prices34[0])
 	fmt.Println(prices34[2])
+
+	//Change Elements of a Slice
+	prices43 := []int{10,20,30}
+	prices43[2] = 50
+	fmt.Println(prices43[0])
+	fmt.Println(prices43[2])
+
+	//Append Elements To a Slice
+	//You can append elements to the end of a slice using the append()function:
+	//slice_name = append(slice_name, element1, element2, ...)
+	myslice17 := []int{1, 2, 3, 4, 5, 6}
+	fmt.Printf("myslice17 = %v\n", myslice17)
+	fmt.Printf("length = %d\n", len(myslice17))
+	fmt.Printf("capacity = %d\n", cap(myslice17))
+	//After appending:
+	myslice17 = append(myslice17, 20, 21)
+	fmt.Printf("myslice17 = %v\n", myslice17)
+	fmt.Printf("length = %d\n", len(myslice17))
+	fmt.Printf("capacity = %d\n", cap(myslice17))
 }
