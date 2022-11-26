@@ -42,4 +42,22 @@ func main(){
 	fmt.Println(arr12)
 	fmt.Println(arr22)
 	fmt.Println(arr32)	
+
+	/*
+	Initialize Only Specific Elements
+	It is possible to initialize only specific elements in an array.
+	*/
+	arr13 := [5]int{1:10,2:40}
+  	fmt.Println(arr13)
+
+	/*
+	Find the Length of an Array
+	The len() function is used to find the length of an array
+	*/
+	arr14 := [4]string{"Volvo", "BMW", "Ford", "Mazda"}
+	arr24 := [...]int{1,2,3,4,5,6}
+	fmt.Println(len(arr14))
+	fmt.Println(len(arr24))
+
+	
 }
