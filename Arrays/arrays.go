@@ -61,9 +61,9 @@ func main(){
 
 	//Copy elements of one array into another
 	var arr15 =[...]int{1,2,3,4,5,6,7,8,9}
+	arr15[1]=41
 	arr16 := arr15
+	arr16[2]=51
 	fmt.Println(arr15)
 	fmt.Println(arr16)
-
-	
 }
