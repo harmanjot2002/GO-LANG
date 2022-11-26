@@ -78,4 +78,40 @@ func main(){
 	fmt.Printf("myslice17 = %v\n", myslice17)
 	fmt.Printf("length = %d\n", len(myslice17))
 	fmt.Printf("capacity = %d\n", cap(myslice17))
+
+	//Append One Slice To Another Slice
+	//Note: The '...' after slice2 is necessary when appending the elements of one slice to another.
+	myslice18 := []int{1,2,3}
+	myslice28 := []int{4,5,6}
+	myslice38 := append(myslice18, myslice28...)
+	fmt.Printf("myslice38=%v\n", myslice38)
+	fmt.Printf("length=%d\n", len(myslice38))
+	fmt.Printf("capacity=%d\n", cap(myslice38))
+
+	//Change The Length of a Slice
+	//Unlike arrays, it is possible to change the length of a slice.
+	//By reslicing or appending items 
+
+	/*
+		Memory Efficiency
+		When using slices, Go loads all the underlying elements into the memory.
+
+		If the array is large and you need only a few elements, it is better to copy those elements using the copy() function.
+
+		The copy() function creates a new underlying array with only the required elements for the slice. This will reduce the memory used for the program. 
+
+		The copy() function takes in two slices dest and src, and copies data from src to dest. It returns the number of elements copied.
+	*/
+	numbers := []int{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
+	// Original slice
+	fmt.Printf("numbers = %v\n", numbers)
+	fmt.Printf("length = %d\n", len(numbers))
+	fmt.Printf("capacity = %d\n", cap(numbers))
+	// Create copy with only needed numbers
+	neededNumbers := numbers[:len(numbers)-10]
+	numbersCopy := make([]int, len(neededNumbers))
+	copy(numbersCopy, neededNumbers)
+	fmt.Printf("numbersCopy = %v\n", numbersCopy)
+	fmt.Printf("length = %d\n", len(numbersCopy))
+	fmt.Printf("capacity = %d\n", cap(numbersCopy))
 }
