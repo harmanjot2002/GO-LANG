@@ -110,7 +110,7 @@ func main(){
 	// Create copy with only needed numbers
 	neededNumbers := numbers[:len(numbers)-10]
 	numbersCopy := make([]int, len(neededNumbers))
-	copy(numbersCopy, neededNumbers)
+	copy(numbersCopy, neededNumbers) 
 	fmt.Printf("numbersCopy = %v\n", numbersCopy)
 	fmt.Printf("length = %d\n", len(numbersCopy))
 	fmt.Printf("capacity = %d\n", cap(numbersCopy))
